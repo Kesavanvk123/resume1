@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width:100%;
+    position:sticky !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+    z-index: 10;
+    padding: 15px 20px;
+    }
+
+.navbar-brand{
+    font-weight: 700;
+    color:lightskyblue !important;
+
+}
+
+.nav-link{
+     color:lightskyblue !important;
+     border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid lightskyblue;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#home h3{
+    font-size: 2.5rem;
+    color:red;
+}
+
+ #home h1{
+    font-size: 4rem;
+    color:blue;
+}
+
+ #home p{
+    font-size: 20px;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+}
+
+.circle{
+    width: 400px;
+    height: 400px;
+    background:white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.6);
+    margin-bottom: 3%;
+    margin-top: 8%;
+    transition: 1s;
+}
+
+.circle img{
+    position: absolute;
+    height: 350px;
+    top: -20%;
+    left: 6%;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+
+.circle:hover{
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.circle:hover img{
+    position: absolute;
+    width: 300px;
+    top: 0%;
+    left: 0%;
+    transition: 1s;
+}
+
+.circle:hover .content{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    color:blue;
+    width: 50%;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.circle .content{
+    opacity: 0;
+}
+
+.content h1{
+    color: red;
+}
+
+.content h4{
+    color: black;
+}
+
+#education{
+    height: 100% !important;
+    background-color: black;
+    padding-top: 3%;
+    
+}
+
+#education .head1{
+    color: red;
+    font-size: 60px;
+}
+
+
+#education .education1{
+    margin-top: 2%;
+}
+
+.education1 .year1{
+    color: aqua;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.education1 .ed1{
+    color: blue;
+    margin-left: 130px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.education1 .e2{
+    color:white;
+    margin-left: 130px;
+    font-size: 30px;
+}
+
+.education1 .ed2{
+    color: blue;
+    margin-left: 130px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.education1 .e3{
+    color:white;
+    margin-left: 130px;
+    font-size: 30px;
+}
+
+.education1 .year2{
+    color: aqua;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+
+.progress1{
+    height: 30px !important;
+    margin-left: 120px;
+    padding: 10px 10px;
+    box-shadow: 20px white;
+
+}
+
+#skills{
+    padding-top: 5%;
+    background-color: #e5e5e5;
+}
+
+#skills .container{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+label{
+    font-size: 20px;
+}
+
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px grey,-2px -2px 5px white;
+}
+
+.progress:hover{
+    box-shadow: 2px 4px 5px white,-2px -2px 5px gray;
+}
+
+
+#contact iframe{
+    height: 550px;
+    width: 550px;
+    margin-top: 10%;
+    border-radius: 15px;
+} 
+
+#contact{
+    background:grey;
+}
+#contact h1{
+    margin-top: 100px !important;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    color:blue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px !important;
+}
+
+#Contact input{
+    margin: 10px 0px;
+}
+
+#contact label{
+color:lightskyblue;
+font-size: 17px;
+}
+
+#contact button{
+    margin: 10px 0px;
+    height: 50px;
+    width: 200px;
+    margin-left: 180px;
+    font-size: 20px;
+    font-weight: 30px;
+    border-radius: 10px;
+    color:white;
+    background:blue;
+    
+}
+
+@media screen and (min-width:760px) and (max-width:941px){
+    #home h3{
+        font-size: 2.5rem;
+        margin-left: -70px;
+        color:red;
+    }
+    
+     #home h1{
+        font-size: 3rem;
+        margin-left: -70px;
+        color:blue;
+    }
+    
+     #home p{
+        font-size: 20px;
+        margin-left: -70px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:760px){
+    
+    nav{
+        width:100% !important;
+        position:sticky !important;
+        left: 0;
+        top: 0;
+        box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+        z-index: 10;
+        padding: 15px 20px;
+        }
+    
+    .navbar-brand{
+        font-weight: 700;
+        color:lightskyblue !important;
+    
+    }
+    
+    .nav-link{
+         color:lightskyblue !important;
+         border-bottom: 2px solid transparent;
+    }
+    
+    .nav-link:hover{
+        border-bottom: 2px solid lightskyblue;
+    }
+
+    #home{
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        padding: 0 2rem;
+        width: 100%;
+        height:100%;
+        background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #home h3{
+        font-size: 2rem;
+        margin-left: -5px;
+        color:red;
+    }
+    
+     #home h1{
+        font-size: 2.5rem;
+        margin-left: -5px;
+        color:blue;
+    }
+    
+     #home p{
+        font-size: 18px;
+        margin-left:-5px;
+    }
+
+    .circle{
+        width: 300px;
+        height: 300px;
+        background:white;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 5px 12px rgba(0,0,0,.6);
+        margin-bottom: 3%;
+        margin-top: 8%;
+        transition: 1s;
+    }
+
+    .circle img{
+        position: absolute;
+        height: 300px;
+        top: -20%;
+        left: 4%;
+        border-radius: 50%;
+        transition: 1s;
+    
+    }
+
+    .circle:hover img{
+        position: absolute;
+        width: 300px;
+        top: 0%;
+        left: 8%;
+        transition: 1s;
+    }
+
+    .circle:hover{
+        width: 350px;
+        height: 700px;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .circle:hover .content{
+        position: absolute;
+        top: 60%;
+        right: 0;
+        color:blue;
+        padding: 10px;
+        width: 100%;
+        opacity: 1;
+        transition: 1.5s;
+    }
+
+    #education .head1{
+        color: red;
+        font-size: 40px;
+    }
+    
+    
+    #education .education1{
+        margin-top: 1%;
+    }
+    
+    .education1 .year1{
+        color: aqua;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .education1 .ed1{
+        color: blue;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    
+    .education1 .e2{
+        color:white;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    
+    .education1 .ed2{
+        color: blue;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    
+    .education1 .e3{
+        color:white;
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    
+    .education1 .year2{
+        color: aqua;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    
+    .progress1{
+        height: 30px !important;
+        margin-left: 80px;
+        padding: 10px 10px;
+        box-shadow: 20px white;
+    }
+    
+    #contact iframe{
+        height: 300px;
+        width: 300px;
+        margin-top: 10%;
+        border-radius: 15px;
+    } 
+    
+    #contact{
+        background:grey;
+    }
+    #contact h1{
+        margin-top: 100px !important;
+        font-weight: 800;
+        font-size: 45px;
+        letter-spacing: 2px;
+        text-align: center;
+        color:blue;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px !important;
+    }
+    
+    #Contact input{
+        margin: 10px 0px;
+    }
+    
+    #contact label{
+    color:lightskyblue;
+    font-size: 17px;
+    }
+    
+    #contact button{
+        margin: 10px 0px;
+        height: 50px;
+        width: 200px;
+        margin-left: 60px;
+        font-size: 20px;
+        font-weight: 30px;
+        border-radius: 10px;
+        color:white;
+        background:blue;
+        
+    }
+    
+}
